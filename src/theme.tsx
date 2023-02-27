@@ -3,23 +3,22 @@ import { createTheme } from "@mui/material";
 const theme = createTheme({
   palette: {
     mode: "dark",
-    primary: { main: "#fff149" },
+    primary: { main: "#E9CA00" },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 25,
+          borderRadius: 1,
         },
       },
     },
   },
   typography: {
     button: {
-      fontSize: "1rem",
+      fontSize: "1.4rem",
     },
   },
 });
 
 export default theme;
-

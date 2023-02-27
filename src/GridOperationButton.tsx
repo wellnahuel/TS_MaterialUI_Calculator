@@ -1,16 +1,16 @@
 import { Button as MuiButton, Grid, styled } from "@mui/material";
 
-interface OperationButtonProps {
+interface GridOperationButtonProps {
   selectedOperation: string;
   operation: string;
-  selectOperation: (operation: string) => void;
+  selectOperation: (digit: string) => void;
 }
 
 const Button = styled(MuiButton)<{ selected: boolean }>((props) => ({
-  borderColor: props.selected ? "#fff" : "rgba(255, 241, 73, 0.5)",
+  borderColor: props.selected ? "#fff" : "#47a025",
 }));
 
-export const OperationButton: React.FC<OperationButtonProps> = ({
+export const GridOperationButton: React.FC<GridOperationButtonProps> = ({
   selectedOperation,
   operation,
   selectOperation,
@@ -20,7 +20,7 @@ export const OperationButton: React.FC<OperationButtonProps> = ({
       <Button
         fullWidth
         variant="outlined"
-        sx={{ backgroundColor: "rgb(254,241,73,.1)" }}
+        sx={{ backgroundColor: "#47a025" }}
         onClick={() => selectOperation(operation)}
         selected={selectedOperation === operation}
       >

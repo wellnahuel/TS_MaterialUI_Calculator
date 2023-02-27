@@ -1,12 +1,12 @@
 import { Button, Grid } from "@mui/material";
 
-interface DigitButtonProps {
+interface GridDigitButtonProps {
   digit: string;
   enterDigit: (digit: string) => void;
   xs?: number;
 }
 
-export const GridDigitButton: React.FC<DigitButtonProps> = ({
+export const GridDigitButton: React.FC<GridDigitButtonProps> = ({
   digit,
   enterDigit,
   xs = 3,
